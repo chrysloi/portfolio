@@ -1,0 +1,111 @@
+.contact {
+    margin-left: 100px;
+    display: flex;
+}
+
+.left {
+    flex-basis: 35%
+}
+
+.left h1 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.left p {
+    color: white;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    height: 60px;
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info div {
+    color: #c4c4c4;
+
+}
+
+.social-media {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.right {
+    margin-left: 88px;
+    flex-basis: 65%;
+    margin-right: 100px;
+}
+
+.right div {
+    display: flex;
+    gap: 35px;
+}
+
+input, textarea {
+    width: 100%;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 30px;
+    background-color: #252525;
+    padding: 15px 30px;
+    margin-top: 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.btn-msg {
+    position: relative;
+    margin-top: 5vh;
+}
+
+.btn-msg img{
+    position: absolute;
+    left: 127px;
+    margin: 0;
+}
+
+.msg {
+    text-transform: uppercase;
+    border: var(--main-color);
+    padding: 16px 55px 16px 15px;
+    height: 50px;
+    background: none;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    color: #fff;
+    position: absolute;
+}
+
+.msg::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    left: 10rem;
+    width: 88%;
+    height: 49px;
+    background-color: var(--main-color);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+.msg:hover::before {
+    position: absolute;
+    width: 82%;    
+    transform: scaleX(-1);
+    left: 9rem;
+}

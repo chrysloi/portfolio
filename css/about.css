@@ -1,0 +1,201 @@
+.about-me {
+    display: flex;
+    width: 90%;
+    margin-left: 70px;
+    /* display: none; */
+}
+
+.details {
+    position: relative;
+    flex-basis: 70%;
+    color: #fff;
+    padding: 20px;
+}
+
+.details h1 {
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    /* margin-bottom: 50px; */
+}
+
+.info .content {
+    margin-bottom: 20px;
+}
+
+.info .content span {
+    color: #c4c4c4;
+}
+
+.btn-cv {
+    margin-top: 3vh;
+}
+
+.btn-cv img{
+    position: absolute;
+    left: 157px;
+}
+
+.download {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 16px 60px 16px 25px;
+    height: 50px;
+    background: none;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    color: #fff;
+    transition: color 300ms linear;
+    position: relative;
+    font-weight: bold;
+}
+
+.download::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    left: 10rem;
+    width: 88%;
+    height: 49px;
+    background-color: var(--main-color);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: all 270ms linear;
+}
+
+.download:hover::before {
+    position: absolute;
+    width: 86%;    
+    transform: scaleX(-1);
+    left: 10rem;
+}
+
+hr {
+    display: flex;
+    margin: 70px auto 55px;
+    max-width: 40%;
+    border: 0.8px solid #222;
+}
+
+/* Skills section start */
+.skills {
+    display: flex;
+    width: 80%;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+div.skill-content{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.skill-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #252525;
+    position: relative;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.percent {
+    width: 96px;
+    height: 96px;
+    background-color: #111;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Skills section end */
+.achive {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 30px 0px;
+    margin: 80px;
+    /* padding-bottom: 50px; */
+}
+
+.experience {
+    position: relative;
+    display: flex;
+    flex-basis: 40%;
+    color: #fff;
+    gap: 15px;
+    line-height: 20px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline p{
+    background-color: var(--main-color);
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.timeline hr {
+    position: relative;
+    left: 0;
+    border: .1px solid #222
+    !important;
+    margin: 25px;
+    height: 100px;
+}
+
+.exp-time {
+    position: absolute;
+    background-color: #252525;
+    height: 25px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 25px;
+}
+
+.expe-desc {
+    position: relative;
+    top: 45px;
+}
+
+.expe-desc h1 {
+    font-size: large;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.expe-desc p{
+    font-size: medium;
+}

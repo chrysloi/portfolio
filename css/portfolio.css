@@ -1,0 +1,34 @@
+.all-projects {
+    width: 90%;
+    margin: 30px 100px 30px 100px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    z-index: -1;
+}
+
+.project {
+    position: relative;
+    flex-basis: 20%;
+    border: 1px solid #111;
+    height: 420px;
+    background: #252525;
+    border-radius: 5px;
+}
+
+.project img{
+    max-width: 100%;
+    height: 60%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom: 2px solid #fab430;
+}
+
+.project h1, .project p {
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+    min-width: 100%;
+    color: #fff;
+}
