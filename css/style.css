@@ -45,10 +45,10 @@ body {
     background-color: #2b2a2a;
     height: 50px;
     width: 50px;
-    /* padding: 10px; */
     border-radius: 50px;
     transition: all 250ms linear;
     position: relative;
+    box-shadow: 1px 2px 2px 1px #2b2b2b;
 }
 
 .menus .active {
@@ -155,23 +155,34 @@ body {
         flex-direction: row;
     } */
     
-    .nav-right .mode{
+    .nav-right .menus .mode{
         display: none;
-        /* opacity: 0; */
     }
     
     .nav-right .menus {
+        border-radius: 50px;
         background-color: #202020;
         padding: 10px 30px 10px 30px;
-        width: 100%;
+        width: 98%;
         position: fixed;
-        /* display: block; */
+        margin: 0 15px 5px 15px;
         left: 0;
         bottom: 0;
         flex-direction: row;
         z-index: 1;
-    } 
+    }
+    
     .menus :hover::before {
         opacity: 0;
+    }
+
+    .all-posts {
+        display: grid;
+        grid-template-columns: 90%;
+        margin-bottom: 90px;
+    }
+
+    .post {
+        flex-basis: 90%;
     }
 }

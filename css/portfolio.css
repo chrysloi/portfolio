@@ -33,6 +33,11 @@
     color: #fff;
 }
 
+.project p a{
+    color: rgba(0, 0, 238, 0.825);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     .all-projects{
         width: 100%;

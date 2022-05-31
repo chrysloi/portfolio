@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="nav-right">
-        <img src="../icons/mode.svg" alt="">
+        <img src="../icons/mode.svg" alt="" class="mode">
         <ul class="menus">
             <a href="../index.html"><li data-tooltip="Home"><img src="../icons/home.svg" alt="Home"></li></a>
 
@@ -69,11 +69,11 @@
             <div class="right">
                 <form>
                     <div>
-                        <input type="text" placeholder="Your name">
-                        <input type="text" placeholder="Your email">
+                        <input type="text" placeholder="Your name" id="name">
+                        <input type="text" placeholder="Your email" id="email" required>
                     </div>
-                    <input type="text" placeholder="Your subject">
-                    <textarea name="message" rows="10" placeholder="Your message"></textarea>
+                    <input type="text" placeholder="Your subject" required>
+                    <textarea name="message" rows="10" placeholder="Your message" required></textarea>
                     <div class="btn-msg">
                         <img src="../icons/send.svg" alt="">
                         <button class="msg">
@@ -85,5 +85,5 @@
         </div>        
     </main>
 </body>
-<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script defer src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </html>
