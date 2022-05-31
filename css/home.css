@@ -2,19 +2,27 @@ body {
     background-image: url(../figma/back1.svg);
 }
 
+.img-me {
+    position: absolute;
+    width: 430px;
+    height: 602px;
+    left: 55px;
+    top: 30px;
+    background: url(../images/IMG_0455.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    z-index: -1;
+}
+
 .intro {
+    width: 100%;
     position: absolute;
     width: 601.45px;
     height: 138px;
     left: 565.55px;
     top: 193px;
-}
-
-.intro hr {
-    position: absolute;
-    flex-basis: 30%;
-    width: 35px;
-    border: 3px solid var(--main-color);
 }
 
 .intro h1 {
@@ -26,6 +34,7 @@ body {
     line-height: 62px;
     font-size: 51px;
 }
+
 .intro h1 span {
     color: #fff;
 }
@@ -39,7 +48,9 @@ body {
 }
 
 .btn-more {
+    width: 100%;
     margin-top: 5vh;
+    position: relative;
 }
 
 .btn-more img{
@@ -86,9 +97,47 @@ body {
     left: 10rem;
 }
 
-@media screen and (max-width: 320) {
-    /* body {
-        background-color: #fff;
-    } */
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url();
+        max-width: 768px;
+        height: 110vh;
+    }
     
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-me {
+        left: 0;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 90%;
+        left: 50px;
+        top: 50px;
+        z-index: -1;
+    }
+    
+    .intro h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .intro p {
+        text-align: center;
+    }
+
+    .btn-more {
+        margin-left: 180px;
+    }
 }

@@ -32,3 +32,12 @@
     min-width: 100%;
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .all-projects{
+        width: 100%;
+        margin: 10px 40px 10px 40px;
+        grid-template-columns: 50% 50%;
+    }
+    
+}

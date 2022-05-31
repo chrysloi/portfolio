@@ -28,7 +28,6 @@
 
 .contact-info div {
     color: #c4c4c4;
-
 }
 
 .social-media {
@@ -108,4 +107,25 @@ input, textarea {
     width: 82%;    
     transform: scaleX(-1);
     left: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 150px;
+    }
+    
+    .right {
+        margin-left: 0;
+        margin-right: 0;
+        z-index: -1;
+    }
+
+    .contact-point{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -19,7 +19,7 @@ let container3 = document.querySelector('.three')
 let progressBar3 = container3.querySelector(".skill-circle");
 let valueContainer3 = container3.querySelector(".percent");
 let progressValue3 = 0
-let progressEndValue3 = 89
+let progressEndValue3 = 60
 
 // Java container
 let container4 = document.querySelector('.four')
